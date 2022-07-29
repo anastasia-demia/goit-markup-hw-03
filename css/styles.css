@@ -21,6 +21,11 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .container {
     width: 1200px;
 }
@@ -155,7 +160,16 @@ a, a:hover, a:focus, a:active {
     background-color: white;
 }
 .advantages-hidden {
-    display: none;
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
 }
 .advantages-title {
     font-style: normal;
@@ -273,7 +287,9 @@ a, a:hover, a:focus, a:active {
     letter-spacing: 0.06em;
     line-height: 2;
 
+    margin-top: 0%;
     margin-left: 24px;
+    padding-top: 20px;
 }
 .what-filter {
     font-style: normal;
@@ -284,13 +300,11 @@ a, a:hover, a:focus, a:active {
     color: #757575;
 
     margin-left: 24px;
-
 }
 .portfolio-main {
     background-color: white;
 }
 .portfolio-item {
-    border: 1px solid #EEEEEE;
     margin-bottom: 30px;
 }
 .portfolio-list {
@@ -299,4 +313,8 @@ a, a:hover, a:focus, a:active {
     justify-content: center;
     justify-content: space-between;
 }
-/* additional styling */
+.portfolio-border {
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
