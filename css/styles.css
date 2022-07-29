@@ -2,7 +2,6 @@ body {
     font-family: "Roboto", "sans-serif";
     color: var(--text-color);
     background-color: #E5E5E5;
-    width: 1600px;
     margin: 0 auto;
 }
 :root {
@@ -11,6 +10,7 @@ body {
 }
 button {
     cursor: pointer;
+    font-family: inherit;
 }
 ul {
     list-style: none;
@@ -30,16 +30,22 @@ img {
     width: 1200px;
 }
 .container.header {
-    padding: 24px 215px;
+    margin: 0 auto;
+    padding: 0px 15px;
     border-bottom: 1px solid #ECECEC;
 }
-.container.advantages, .container.examples, .container.team, .container.portfolio {
-    padding: 94px;
-    margin: auto;
+.container.examples, .container.team, .container.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin: 0 auto;
+}
+.container.advantages {
+    padding: 94px 94px 0px;
+    margin: 0 auto;
 }
 .container.footer {
+    margin: 0 auto;
     padding-top: 60px;
-    padding-left: 215px;
     padding-bottom: 50px;
 }
 
@@ -56,6 +62,7 @@ img {
     line-height: 1.19;
     color: var(--main-color);
     
+    padding: 25px 0px 25px;
     margin-right: 100px;
 }
 .color-black {
@@ -82,7 +89,11 @@ img {
     color: var(--main-color);
 }
 .contact-info-list {
+    padding: 32px 0px 32px;
     margin-left: 265px;
+}
+.menu-nav-list {
+    padding: 32px 0px 32px;
 }
 .contact-info {
     font-style: normal;
@@ -150,7 +161,8 @@ img {
     color: white;
     background-color: var(--main-color);
 
-    margin-left: 213px;
+    display: block;
+    margin: 0 auto;
 }
 .banner-button:hover {
     background-color: #F5F4FA;
@@ -179,11 +191,13 @@ img {
     line-height: 1.14;
     text-transform: uppercase;
 }
+.advantages-item {
+    width: 270px;
+    margin-right: 30px;
+}
 .advantages-list, .examples-list, .team-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
     margin: 0%;
 }
 .advantages-text {
@@ -200,6 +214,9 @@ img {
 .examples {
     background-color: white;
 }
+.example-item {
+    margin-right: 30px;
+}
 .section-title {
     font-style: normal;
     font-weight: 700;
@@ -208,6 +225,7 @@ img {
     line-height: 1.17;
     
     margin-top: 0%;
+    margin-bottom: 50px;
 }
 .section-title {
     display: flex;
@@ -216,10 +234,15 @@ img {
 .team {
     background-color: #F5F4FA;
 }
+.team-info {
+    text-align: center;
+    padding: 10px 0px 10px;
+}
 .team-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    margin-right: 30px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -232,8 +255,6 @@ img {
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.18;
-
-    margin: 30px 0px 5px;
 }
 .positions {
     font-style: normal;
@@ -241,8 +262,6 @@ img {
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.19;
-
-    margin: 5px 0px 30px;
 
     color: #757575;
 }
@@ -257,12 +276,6 @@ img {
 .portfolio-button {
     padding-right: 8px;
 }
-.text {
-    margin: 6px 26px;
-}
-.text2 {
-    margin: 6px 53px;
-}
 .button-color {
     font-family: "Roboto";
     font-style: normal;
@@ -271,10 +284,31 @@ img {
     letter-spacing: 0.03em;
     line-height: 1.62;
     text-align: center;
+    
     background: #F5F4FA;
+    
     border-radius: 4px;
     border-color: #F5F4FA;
     border-style: none;
+
+    padding: 6px 26px;
+}
+.button-color-big {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.62;
+    text-align: center;
+    
+    background: #F5F4FA;
+    
+    border-radius: 4px;
+    border-color: #F5F4FA;
+    border-style: none;
+
+    padding: 6px 53px;
 }
 .button-color:hover {
     background-color: var(--main-color);
@@ -287,9 +321,7 @@ img {
     letter-spacing: 0.06em;
     line-height: 2;
 
-    margin-top: 0%;
-    margin-left: 24px;
-    padding-top: 20px;
+    margin: 0%;
 }
 .what-filter {
     font-style: normal;
@@ -299,21 +331,24 @@ img {
     line-height: 1.87;
     color: #757575;
 
-    margin-left: 24px;
+    margin: 0%;
 }
 .portfolio-main {
     background-color: white;
+    
 }
 .portfolio-item {
     margin-bottom: 30px;
+    margin-left: 30px;
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-between;
 }
 .portfolio-border {
+    padding: 20px 24px;
+
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
