@@ -29,7 +29,7 @@ a, a:hover, a:focus, a:active {
     border-bottom: 1px solid #ECECEC;
 }
 .container.advantages, .container.examples, .container.team, .container.portfolio {
-    padding: 80px;
+    padding: 94px;
     margin: auto;
 }
 .container.footer {
@@ -272,6 +272,8 @@ a, a:hover, a:focus, a:active {
     font-size: 18px;  
     letter-spacing: 0.06em;
     line-height: 2;
+
+    margin-left: 24px;
 }
 .what-filter {
     font-style: normal;
@@ -280,9 +282,21 @@ a, a:hover, a:focus, a:active {
     letter-spacing: 0.03em;
     line-height: 1.87;
     color: #757575;
+
+    margin-left: 24px;
+
 }
 .portfolio-main {
     background-color: white;
 }
-
+.portfolio-item {
+    border: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
 /* additional styling */
