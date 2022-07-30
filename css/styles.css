@@ -12,6 +12,7 @@ button {
     cursor: pointer;
     font-family: inherit;
 }
+
 ul {
     list-style: none;
     padding: 0%;
@@ -31,16 +32,10 @@ img {
 }
 .container.header {
     margin: 0 auto;
-    padding: 0px 15px;
     border-bottom: 1px solid #ECECEC;
 }
-.container.examples, .container.team, .container.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin: 0 auto;
-}
-.container.advantages {
-    padding: 94px 94px 0px;
+.container.examples, .container.team, .container.portfolio, .container.advantages {
+    padding: 94px 0px;
     margin: 0 auto;
 }
 .container.footer {
@@ -150,6 +145,8 @@ img {
     line-height: 1.36;
     
     color: white;
+
+    margin: 0px 0px 30px;
 }
 .banner-button {
     font-style: normal;
@@ -190,6 +187,7 @@ img {
     letter-spacing: 0.03em;
     line-height: 1.14;
     text-transform: uppercase;
+    margin: 0%;
 }
 .advantages-item {
     width: 270px;
@@ -202,6 +200,8 @@ img {
 }
 .advantages-text {
     width: 270px;
+
+    margin: 10px 0px 0px;
     
     font-style: normal;
     font-weight: 400;
@@ -236,7 +236,7 @@ img {
 }
 .team-info {
     text-align: center;
-    padding: 10px 0px 10px;
+    padding: 30px 0px;
 }
 .team-item {
     display: flex;
@@ -255,6 +255,8 @@ img {
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.18;
+
+    margin: 0px 0px 10px;
 }
 .positions {
     font-style: normal;
@@ -264,6 +266,8 @@ img {
     line-height: 1.19;
 
     color: #757575;
+
+    margin: 0%;
 }
 
 /* portfolio styling */
@@ -331,7 +335,8 @@ img {
     line-height: 1.87;
     color: #757575;
 
-    margin: 0%;
+    margin: 5px 0px 0px;
+
 }
 .portfolio-main {
     background-color: white;
